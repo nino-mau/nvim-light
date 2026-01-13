@@ -1,10 +1,36 @@
 -- Options are automatically loaded before lazy.nvim startup
--- Minimal essential options only
+-- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
+-- Add any additional options here
 
--- Disable smooth scroll (can cause lag)
-vim.o.smoothscroll = false
+vim.g.lazyvim_mini_snippets_in_completion = true
 
--- Word wrap settings (kept from original)
-vim.opt.breakindent = true
-vim.opt.breakindentopt = "shift:2,min:40,sbr"
-vim.opt.showbreak = "↪ "
+vim.g.lazyvim_eslint_auto_format = false
+
+-- enable django template lsp
+vim.lsp.enable("djlsp")
+
+--
+-- WORD WRAP
+--
+vim.opt.breakindent = true -- Enable break indent
+vim.opt.breakindentopt = "shift:2,min:40,sbr" -- Configure break indent
+vim.opt.showbreak = "↪ " -- Visual indicator for wrapped lines
+-- vim.opt.wrap = false -- Visually wrap long lines
+-- vim.opt.linebreak = true -- Break at word boundaries
+-- vim.opt.breakindent = true -- Keep wrapped lines visually indented
+-- vim.opt.textwidth = 80 -- Hard-wrap lines at 80 chars
+-- vim.opt.formatoptions:append("t") -- Enable auto-wrap when typing
+--
+
+-- Add linematch to neovim diff
+vim.opt.diffopt:append("linematch:60")
+vim.opt.diffopt = {
+	"internal",
+	"filler",
+	"closeoff",
+	"hiddenoff",
+	"vertical",
+	"indent-heuristic",
+	"linematch:60",
+	"algorithm:histogram",
+}
