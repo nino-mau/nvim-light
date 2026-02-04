@@ -8,5 +8,8 @@ return {
 		on_colors = function(colors)
 			colors.comment = "#8690AF"
 		end,
+		on_highlights = function(hl, c)
+			hl["htmlTagN"] = { fg = c.magenta }
+		end,
 	},
 }
