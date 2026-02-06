@@ -8,9 +8,11 @@
     "lazyvim.plugins.extras.editor.leap",
     "lazyvim.plugins.extras.editor.mini-move",
     "lazyvim.plugins.extras.formatting.biome",
+    "lazyvim.plugins.extras.formatting.prettier",
     "lazyvim.plugins.extras.lang.json",
     "lazyvim.plugins.extras.lang.markdown",
     "lazyvim.plugins.extras.lang.typescript",
+    "lazyvim.plugins.extras.lang.vue",
     "lazyvim.plugins.extras.util.chezmoi",
     "lazyvim.plugins.extras.util.dot",
     "lazyvim.plugins.extras.util.mini-hipatterns"
